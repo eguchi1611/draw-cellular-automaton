@@ -25,7 +25,7 @@ public class DrawCellularAutoMaton {
                 int a = result[i - 1][j - 1];
                 int b = result[i - 1][j];
                 int c = result[i - 1][j + 1];
-                int index = 7 - (a << 2 | b << 1 | c);
+                int index = 4 * a + 2 * b + c;
                 result[i][j] = rule[index];
             }
         }
